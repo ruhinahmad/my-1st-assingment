@@ -1,4 +1,7 @@
 /* Shared styles*/
+html {
+    scroll-behavior: smooth;
+  }
 body {
     font-family: 'Lato', sans-serif;
 }
@@ -11,9 +14,51 @@ body {
 .p-100{
     padding: 0 100px;
 }
+/* CUSTOM STYLE */
 .features-content h1 {
     font-size: 32px;
 }
+/* START NAVIGATION STYLE */
+.navigstion {
+    display: flex;
+    justify-content: space-between;
+}
+.navigstion {
+    display: flex;
+    background: #FCEEF1;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+img.logo {
+    width: 71px;
+    height: 71px;
+    margin: 10px 0 10px 60px;
+    cursor: pointer;
+}
+.nav-content {
+    display: flex;
+    align-items: center;
+}
+ul.menus li a {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #E55473;
+    text-decoration: none;
+    font-weight: bold;
+}
+ul.menus li {
+    margin-right: 36px;
+    margin-left: 0;
+}
+ul.menus {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/* START BANNER STYLE */
 .banner {
     background: rgba(229, 84, 115, 0.10);
     width: 100%;
@@ -22,7 +67,9 @@ body {
     align-items: center;
     justify-content: space-around;
     overflow-y: hidden;
+    margin-top: 90px;
 }
+
 img.banner-img {
     height: 90%;
     flex-shrink: 0;
@@ -54,9 +101,9 @@ button.btn {
     padding: 8px 12px;
     font-size: 10px;
 }
-/*features style start*/
+/*START FEATURES STYLE*/
 .feaures-section {
-    padding-top: 80px;
+    padding: 80px 0;
 }
 .features-title {
     display: flex;
@@ -73,8 +120,8 @@ button.btn {
     padding: 12px 0 60px;
 }
 .box-1 {
-    width: 250px;
-    height: 300px;
+    width: 100%;
+    height: 400px;
     flex-shrink: 0;
     border-radius: 300px 300px 0px 0px;
     background: rgba(167, 33, 98, 0.15);
@@ -84,14 +131,15 @@ button.btn {
 }
 .boxes {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 40px;
 }
 .box-1 img {
-    width: 180px;
-    height: 250px;
+    width: 250px;
+    height: 340px;
 }
 .box-content {
-    width: 250px;
+    width: 310px;
     text-align: center;
 }
 .box-content a {
@@ -108,28 +156,7 @@ button.btn {
 .box-1.bg-2 {
     background: rgba(71, 125, 17, 0.15);
 }
-.service-content {
-    border-radius: 8px;
-    background: rgba(39, 39, 39, 0.05);
-    margin: 60px 0 60px 0;
-}
-.service-content {
-    border-radius: 8px;
-    background: rgba(39, 39, 39, 0.05);
-    margin: 60px 0 60px 0;
-    display: flex;
-    justify-content: space-between;
-}
-.service-icon {
-    text-align: center;
-}
-.service-content {
-    background: rgba(39, 39, 39, 0.05);
-    margin: 60px 0 60px 0;
-    display: flex;
-    justify-content: space-between;
-    padding: 60px;
-}
+/*START DISCOUNT-AREA STYLE*/
 .section.discount.p-100 {
     border-radius: 8px;
     background: rgba(229, 84, 115, 0.05);
@@ -206,34 +233,37 @@ button.ds-btn {
 .section-social.p-100 {
     padding-top: 80px;
 }
+.social-content {
+    width: 238px;
+}
 .social-img {
     display: flex;
     justify-content: space-around;
 }
-.social-1{
-    width: 250px;
-    height: 230px;
+.social-1 {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: end;
 }
 .social-2{
-    width: 250px;
-    height: 230px;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: end;
 }
 .social-3{
-    width: 250px;
-    height: 230px;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: end;
 }
 .social-4{
-    width: 250px;
-    height: 230px;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: end;
@@ -241,14 +271,23 @@ button.ds-btn {
 }
 .social-img {
     gap: 22px;
+    display: flex;
+    justify-content: center;
+}
+.social-content {
+    width: 236px;
+    height: 300px;
 }
 .section-social.p-100 {
     padding-top: 80px;
     padding-bottom: 80px;
 }
-.section-banner{
-    width: 96%;
-    margin-left: 19px;
+.contact-info {
+    width: 1010px;
+}
+.section-banner {
+    width: 100%;
+    margin-left: 0px;
     height: 350px;
     background: url(../images/Rectangle9.png);
     background-position: center;
@@ -285,10 +324,35 @@ button {
 }
 .section-contact.p-100 {
     margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
 }
-
-
-
-
-
-
+span.unique-2 {
+    color: #faf7f8;
+    font-size: 40px;
+    font-weight: 800;
+}
+span.unique-1 {
+    color: #E55473;
+    font-size: 40px;
+    font-weight: 800;
+}
+.footer-content {
+    text-align: center;
+}
+.footer-content p {
+    width: 590px;
+    font-size: 17px;
+    margin: auto;
+    padding: 12px 0;
+    color: rgba(255, 255, 255, 0.90);
+}
+.footer-content h6 {
+    color: rgba(255, 255, 255, 0.40);
+    font-size: 14px;
+    font-weight: 400;
+}
+.footer {
+    background: #111010;
+    height: 150pxpx;
+}
